@@ -7,113 +7,37 @@
 		<meta name="reply-to" content="kimruandev@gmail.com">
 		<meta name="keywords" content="prova, faculdade, tarefa">
 		<meta name="robots" content="index,follow">
-		<title>IFTM Cursos</title>
-
-        <style>
-            table {
-                font-family: arial, sans-serif;
-                border-collapse: collapse;
-                width: 100%;
-            }
-            td, th {
-                border: 1px solid #dddddd;
-                text-align: left;
-                padding: 8px;
-            }
-            tr:nth-child(even) {
-                background-color: #dddddd;
-            }
-        </style>
+		<link type="text/css" rel="stylesheet" href="estilos.css">
+        <title>HTML 5</title>
 	</head>
 	<body>
-        <h1>Cadastro de clientes</h1>
-
-        <p style="color: red;">Todos os campos são de preenchimento obrigatório</p>
-
-        <form>
-            <fieldset>
-                <legend>Dados pessoais</legend>
-                <label>Nome:</label>
-                <br>
-                <input type="text" name="completename" value="" required>
-                <br>
-                <label>Data de nascimento:</label>
-                <br>
-                <input type="date" id="birthday" name="birthday" required>
-                <br>
-                <label>Sexo:</label>
-                <br>
-                <input type="radio" id="male" name="my_gender" value="Male" required checked>
-                <label for="male">Masculino</label>
-                <input type="radio" id="female" name="my_gender" value="Female" required>
-                <label for="female">Feminino</label>
-            </fieldset>
-            
-            <fieldset>
-                <legend>Informações de contato</legend>
-                <label>Email:</label>
-                <br>
-                <input type="email" name="email" value="" required>
-                <br>
-                <label>Telefone celular:</label>
-                <br>
-                <input type="tel" id="phonenumber" name="phonenumber" placeholder="Apenas números (máx: 9)" maxlength="9" required>
-                <br>
-                <label>Website pessoal/profissional:</label>
-                <br>
-                <input type="url" name="mywebsite" value="" required>
-            </fieldset>
-
-            <fieldset>
-                <legend>Localização</legend>
-                <label>Endereço:</label>
-                <br>
-                <input type="text" name="address" value="" required>
-                <br>
-                <label>Número:</label>
-                <br>
-                <input type="number" name="addressnumber" placeholder="(Valor entre 1 e 9999)" min="1" max="9999" required>
-                <br>
-                <label>Cidade:</label>
-                <br>
-                <input type="text" name="city" value="" required>
-                <br>
-                <label>Estado:</label>
-                <br>
-                <select id="state" name="state">
-                    <option value="" disabled selected>Selecione</option>
-                    <option value="AC">Acre</option>
-                    <option value="AL">Alagoas</option>
-                    <option value="AP">Amapá</option>
-                    <option value="AM">Amazonas</option>
-                    <option value="BA">Bahia</option>
-                    <option value="CE">Ceará</option>
-                    <option value="DF">Distrito Federal</option>
-                    <option value="ES">Espírito Santo</option>
-                    <option value="GO">Goiás</option>
-                    <option value="MA">Maranhão</option>
-                    <option value="MT">Mato Grosso</option>
-                    <option value="MS">Mato Grosso do Sul</option>
-                    <option value="MG">Minas Gerais</option>
-                    <option value="PA">Pará</option>
-                    <option value="PB">Paraíba</option>
-                    <option value="PR">Paraná</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="PI">Piauí</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                    <option value="RS">Rio Grande do Sul</option>
-                    <option value="RO">Rondônia</option>
-                    <option value="RR">Roraima</option>
-                    <option value="SC">Santa Catarina</option>
-                    <option value="SP">São Paulo</option>
-                    <option value="SE">Sergipe</option>
-                    <option value="TO">Tocantins</option>
-                    <option value="EX">Estrangeiro</option>
-                </select>
-            </fieldset>
-            <input type="submit" value="Cadastrar">
-            <input type="reset" value="Limpar">
-        </form>
+        <header>
+            <h1>Primeiro Layout utilizando HTML5</h1>
+        </header>
+        <main>
+            <nav>
+                <ul>
+                    <li><a href="#">Opção 1</a></li>
+                    <li><a href="#">Opção 2</a></li>
+                    <li><a href="#">Opção 3</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h2>Área geral de contéudo da página</h2>
+                <article>
+                    <h3>Notícia sobre esportes</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+                </article>
+                <article>
+                    <h3>Notícia sobre política</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>Rodapé da página</p>
+        </footer>
     </body>
 </html>
